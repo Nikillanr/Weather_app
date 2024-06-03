@@ -43,7 +43,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  width: 100%;
+  width: 80%;
   max-width: 800px;
   margin-top: 80px; /* Space for fixed navbar */
 }
@@ -109,4 +109,81 @@ p {
 .error {
   color: red;
   font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .App {
+    width: 90%;
+    margin-top: 60px; /* Adjust margin for smaller screens */
+  }
+
+  input {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .forecast {
+    flex-wrap: wrap;
+  }
+
+  .forecast-item {
+    width: 90px;
+    margin: 5px;
+  }
+
+  .navbar h1 {
+    font-size: 1.2em;
+  }
+
+  .weather-icon {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    width: 100%;
+    padding: 10px;
+    margin-top: 60px; /* Adjust margin for smaller screens */
+  }
+
+  input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .forecast-item {
+    width: 100px;
+    margin: 5px;
+  }
+
+  .navbar h1 {
+    font-size: 1em;
+  }
+
+  .weather-icon {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
 }
