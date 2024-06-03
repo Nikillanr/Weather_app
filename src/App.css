@@ -43,7 +43,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   margin-top: 80px; /* Space for fixed navbar */
 }
